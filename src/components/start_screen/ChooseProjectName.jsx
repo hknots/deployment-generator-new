@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, Fade, TextField} from "@mui/material";
+import {Button, Fade, TextField, Typography} from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export default function ChooseProjectName({setProjectName}) {
@@ -17,8 +17,7 @@ export default function ChooseProjectName({setProjectName}) {
         <div className="flex justify-center items-center h-screen">
             <div className="text-center">
                 <Fade in={checked} timeout={500}>
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    <h2 className="text-3xl font-semibold mb-4">What's your project name?</h2>
+                    <Typography margin="14px" variant="h4">What's your project name?</Typography>
                 </Fade>
                 <Fade in={checked} timeout={1000}>
                     <div className="flex justify-center items-center">
